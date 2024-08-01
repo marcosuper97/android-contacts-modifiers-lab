@@ -4,8 +4,25 @@ package ru.yandex.practicum.contacts.presentation.sort;
 public class SortUiState {
 
     // сделайте поля isApplyEnable и newSelectedSortType приватными
-    public boolean isApplyEnable = false;
-    public String newSelectedSortType = null;
+    private boolean isApplyEnable = false;
+    private String newSelectedSortType = null;
 
-    // реализуйте get и set методы для обоих полей
+    public String getNewSelectedSortType() {
+        return newSelectedSortType;
+    }
+
+    public void setNewSelectedSortType(String newSelectedSortType) {
+        this.newSelectedSortType = newSelectedSortType;
+    }
+
+    public void setApplyEnable(boolean applyEnable) {
+        isApplyEnable = applyEnable;
+    }
+
+    public boolean getIsApplyEnable() {
+        return isApplyEnable;
+    }
+
+// реализуйте get и set методы для обоих полей
+
 }
